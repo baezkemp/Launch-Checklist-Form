@@ -36,7 +36,7 @@ function infoVerify(){
    const divInfo = document.getElementById("faultyItems");
    
    pilotStatus.innerHTML = `Pilot ${pilotName.value} is  ready to launch`;
-   copilotStatus.innerHTML = `Pilot ${copilotName.value} is  ready to launch`;
+   copilotStatus.innerHTML = `Co-pilot ${copilotName.value} is  ready to launch`;
    
    if(fuelLevel.value < 10000){
       h2Status.style.color = 'red';
@@ -65,7 +65,7 @@ function infoVerify(){
    if(fuelLevel.value > 10000 && cargoMass.value < 10000){
       h2Status.style.color = 'green';
       h2Status.innerHTML = 'Shuttle is ready for launch!';
-      divInfo.style.visibility = 'hidden';
+      divInfo.style.visibility = 'visible';
       event.preventDefault();
    };
 };
